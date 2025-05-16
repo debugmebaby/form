@@ -146,11 +146,33 @@ body, html {
 }
 
 .intro-text {
-  margin-bottom: 30px;
-  font-size: 2rem;
-  line-height: 1.4;
-  color: #333;
+  width: 100%;       
+  margin: 0;          
+  padding: 1.5rem;    
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: white;
+  user-select: none;
+  line-height: 1.6;
 }
+
+.intro-text strong {
+  font-size: 1.3rem;
+  letter-spacing: 0.08em;
+  color: #50f3f3; 
+  text-shadow: 0 0 10px #50eef3;
+}
+
+.intro-text em {
+  color: #c9c3e3;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  display: block;
+  margin-top: 0.8rem;
+}
+
 
 .intro-text p:last-of-type {
   margin-top: 2rem;
