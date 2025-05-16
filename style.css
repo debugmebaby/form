@@ -35,7 +35,6 @@ body, html {
    background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
-   overflow-x: hidden;
 }
 
 .container {
@@ -104,14 +103,6 @@ body, html {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
 }
 
-.logo-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px auto;
-  opacity: 0.9;
-  filter: brightness(100%) grayscale(0%);
-}
 
 .logo-text {
   font-family: 'Norse', sans-serif;
@@ -166,14 +157,11 @@ body, html {
 }
 
 .intro-text p strong {
-  color: #a1fff2;
   animation: pulseShadow 2.5s infinite ease-in-out;
   font-size: 1.3rem;
   letter-spacing: 0.08em;
   color: #50f3f3; 
-  text-shadow: 0 0 10px #50eef3;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-
 }
 
 @keyframes pulseShadow {
@@ -293,8 +281,7 @@ body, html {
 
 .submit-button {
   width: 220px;
-  background: linear-gradient(145deg, #1ddbdb, #0ebb9e); /* fin blå gradient */
-  color: #000000; /* svart text */
+  color: #000000; 
   padding: 14px 0;
   font-size: 1.3rem;
   font-weight: 700;
@@ -306,7 +293,6 @@ body, html {
   margin: 20px auto 0 auto;
   user-select: none;
   display: block;
-  box-shadow: 0 8px 20px rgba(72, 170, 170, 0.6);
   text-shadow: none;
   background: linear-gradient(145deg, rgba(29, 219, 219, 0.7), rgba(14, 187, 158, 0.7));
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -364,17 +350,6 @@ body, html {
   }
 }
 
-@keyframes pulseButton {
-  0%, 100% {
-    box-shadow: 0 8px 20px rgba(58, 75, 35, 0.6);
-    transform: translateY(0);
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(106, 127, 61, 0.9);
-    transform: translateY(-2px);
-  }
-}
-
 .glow-logo {
   filter: drop-shadow(0 0 8px #00ffcc)
           drop-shadow(0 0 16px #00ffcc)
@@ -387,7 +362,7 @@ body, html {
   font-size: 1.5rem;
   color: rgb(5, 5, 5);
   margin-top: 2rem;
-  font-family: 'Norse', sans-serif !important;
+  font-family: 'Norse', sans-serif;
   font-weight: bold;
   text-shadow: 0 2px 4px #50f3f3,
   0 2px 4px #50f3f3,
