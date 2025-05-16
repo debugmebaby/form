@@ -185,7 +185,7 @@ body, html {
 .input-group label {
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: #555;
+  color: #2e6d73;
   margin-bottom: 6px;
   letter-spacing: 0.05em;
   user-select: none;
@@ -194,13 +194,15 @@ body, html {
 .input-group input {
   padding: 12px 14px;
   font-size: 1rem;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08); 
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(173, 216, 230, 0.4); 
   border-radius: 8px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  color: #222;
+  color: #e6f7ff;
+  box-shadow: 0 1px 3px rgba(0, 191, 255, 0.1); 
 }
+
 
 .input-group input:hover:not(:focus) {
   border-color: #3d777f;
@@ -212,14 +214,17 @@ body, html {
   background: rgba(255, 255, 255, 0.3);
   border-color: var(--input-focus);
   box-shadow:
-    0 0 15px rgba(74, 144, 226, 0.8),
-    inset 0 0 10px rgba(74, 144, 226, 0.5);
+    0 0 15px rgba(74, 216, 226, 0.8),
+    inset 0 0 10px rgba(74, 221, 226, 0.5);
   outline: none;
 }
 
-.input-group input:invalid {
-  border-color: var(--error-color);
+..input-group input:invalid {
+  border-color: #4ac2cd; 
+  box-shadow: 0 0 5px rgba(74, 194, 205, 0.4); 
+  background-color: rgba(74, 194, 205, 0.05); 
 }
+
 
 .submit-button {
   width: 220px;
