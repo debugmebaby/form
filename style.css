@@ -30,6 +30,12 @@ body, html {
   height: 100%;
   background-color: #f9fafb;
   color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  background-image: url(img/runes.jpg);
+   background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -53,6 +59,7 @@ body, html {
   animation: pulseOverlay 6s ease-in-out infinite;
   transition: transform 0.7s ease;
   z-index: 1;
+  overflow: hidden;
 }
 
 .left-side::after {
@@ -75,11 +82,6 @@ body, html {
   100% { background-position: 100% 50%; }
 }
 
-.container:hover .left-side {
-  animation-play-state: paused; 
-  transform: scale(1.05);
-}
-
 .logo-container {
   position: absolute;
   top: 50%;
@@ -90,11 +92,11 @@ body, html {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   padding: 1rem 2rem;
   border-radius: 10px;
+  transition: filter 0.4s ease, box-shadow 0.4s ease;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.1);
   filter: grayscale(40%) brightness(85%);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  transition: filter 0.4s ease, box-shadow 0.4s ease;
-  z-index: 10;
 }
 
 .logo-container:hover {
@@ -139,7 +141,6 @@ body, html {
   position: relative;
   z-index: 5;
   color: #222;
-  backdrop-filter: saturate(180%) blur(12px);
   border-top: 4px solid rgba(180, 180, 180, 0.137);
   border-bottom: 4px solid rgba(180, 180, 180, 0.137);
 }
@@ -155,24 +156,41 @@ body, html {
   line-height: 1.6;
    padding: 3rem 2rem;  
   min-height: 180px;   
-  opacity: 75%;
+  opacity: 80%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
-.intro-text strong {
+.intro-text p strong {
+  color: #a1fff2;
+  animation: pulseShadow 2.5s infinite ease-in-out;
   font-size: 1.3rem;
   letter-spacing: 0.08em;
   color: #50f3f3; 
   text-shadow: 0 0 10px #50eef3;
 }
 
+@keyframes pulseShadow {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #50f3f3,
+      0 0 10px #30d6d6,
+      0 0 15px #20bfbf;
+  }
+  50% {
+    text-shadow:
+      0 0 12px #50f3f3,
+      0 0 20px #30d6d6,
+      0 0 25px #20bfbf;
+  }
+}
+
 .intro-text em {
    font-style: italic;   
   font-size: 1.2rem;    
   font-weight: 600;     
-  color: #c9c3e3;       
+  color: #d0d7da;       
   display: block;     
   margin-top: 1rem;     
   font-family: 'Georgia', serif;
@@ -182,7 +200,7 @@ body, html {
   font-size: 1.25rem;  
   line-height: 1.6;    
   font-weight: 500;    
-  color: #c9c3e3;        
+  color: #d0d7da;        
 }
 
 
@@ -279,14 +297,19 @@ body, html {
 }
 
 .submit-button:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px) scale(1.05);
+  background-color: #28cfcf;
+  box-shadow:
+    0 0 15px #1ad5d4,
+    0 0 20px #1ad5d4,
+    0 0 30px #1ad5d4;
 }
 
 .login-text {
   margin-top: 10px;
   font-size: 0.9rem;
   text-align: center;
-  color: #555;
+  color: #000000;
 }
 
 .login-text a {
@@ -335,4 +358,12 @@ body, html {
           drop-shadow(0 0 16px #00ffcc)
           drop-shadow(0 0 24px #00ffcc);
   transition: filter 0.3s ease;
+}
+
+.wisdom-quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: rgb(5, 5, 5);
+  margin-top: 2rem;
 }
