@@ -8,9 +8,7 @@
 }
 
 :root {
-  --primary-color: #20bcc2;
   --primary-hover: #30dfd0;
-  --accent-color: #e2f0cb;
   --text-color: #222;
   --input-border: rgba(204, 204, 204, 0.5);
   --input-focus: #4a90e2;
@@ -125,11 +123,14 @@ body, html {
 .right-side {
   flex: 1;
   padding: 40px 60px;
-  background: linear-gradient(to bottom,
-    var(--section-top) 0%,
-    var(--section-mid) 45%,
-    var(--section-mid) 45%,
-    var(--section-bot) 100%);
+    background: linear-gradient(
+  to bottom,
+  rgba(128, 128, 128, 0.7) 0%,
+  rgba(255, 255, 255, 0.95) 40%,
+  rgba(255, 255, 255, 0.95) 60%,
+  rgba(128, 128, 128, 0.7) 100%
+);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,7 +139,6 @@ body, html {
   position: relative;
   z-index: 5;
   color: #222;
-  background-color: rgba(245, 245, 245, 0.664);
   backdrop-filter: saturate(180%) blur(12px);
   border-top: 4px solid rgba(180, 180, 180, 0.137);
   border-bottom: 4px solid rgba(180, 180, 180, 0.137);
@@ -146,8 +146,7 @@ body, html {
 
 .intro-text {
   width: 100%;       
-  margin: 0;          
-  padding: 1.5rem;    
+  margin: 0;             
   background: linear-gradient(135deg, #1f1c2c, #928dab);
   border-radius: 8px; 
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -280,9 +279,7 @@ body, html {
 }
 
 .submit-button:hover {
-  background-color: var(--primary-hover);
   transform: translateY(-3px);
-  animation: float 1.5s ease-in-out infinite;
 }
 
 .login-text {
