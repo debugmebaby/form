@@ -64,34 +64,46 @@ body, html {
   padding: 1rem 2rem;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.3);
+  filter: grayscale(70%) brightness(80%);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); 
+  transition: filter 0.3s ease;
 }
+
+.logo-container:hover {
+  filter: grayscale(0%) brightness(100%); 
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
 
 .logo-img {
   width: 80px;
   height: auto;
   display: block;
   margin: 0 auto 10px auto;
+  filter: grayscale(70%) brightness(80%);
 }
 
 .logo-text {
   font-family: 'Norse', sans-serif;
   font-size: 3rem;
   letter-spacing: 0.1em;
-}
+  color: rgba(255, 255, 255, 0.7);
+  }
 
 .right-side {
   flex: 1;
   padding: 40px 60px;
   background: linear-gradient(to bottom,
     var(--section-top) 0%,
-    var(--section-mid) 40%,
-    var(--section-mid) 60%,
+    var(--section-mid) 35%,
+    var(--section-mid) 65%,
     var(--section-bot) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  box-shadow: -10px 0 20px rgba(0,0,0,0.05);
+ box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+
 }
 
 .intro-text {
@@ -168,6 +180,8 @@ body, html {
   user-select: none;
   display: block;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   background: linear-gradient(145deg, var(--primary-color), var(--primary-hover));
+  box-shadow: 0 5px 15px rgba(74, 89, 43, 0.4);
 }
 
 .submit-button:hover {
