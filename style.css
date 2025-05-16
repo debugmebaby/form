@@ -161,6 +161,7 @@ body, html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-decoration: darkcyan;
 }
 
 .intro-text p strong {
@@ -220,6 +221,10 @@ body, html {
   color: #222;
   font-family: 'Norse', sans-serif;
   letter-spacing: 0.05em;
+  text-shadow: 0 2px 4px #50f3f3,
+  0 2px 4px #50f3f3,
+  0 0 10px #30d6d6,
+  0 0 15px #20bfbf;
 }
 
 .form-row {
@@ -281,8 +286,8 @@ body, html {
 
 .submit-button {
   width: 220px;
-  background: linear-gradient(145deg, #1ddbdb, #0ebb9e);
-  color: rgb(0, 0, 0);
+  background: linear-gradient(145deg, #1ddbdb, #0ebb9e); /* fin blå gradient */
+  color: #000000; /* svart text */
   padding: 14px 0;
   font-size: 1.3rem;
   font-weight: 700;
@@ -290,25 +295,32 @@ body, html {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
   margin: 20px auto 0 auto;
   user-select: none;
   display: block;
   box-shadow: 0 8px 20px rgba(72, 170, 170, 0.6);
+  text-shadow: none;
+  background: linear-gradient(145deg, rgba(29, 219, 219, 0.7), rgba(14, 187, 158, 0.7));
+
 }
 
 .submit-button:hover {
+  background: #000000; 
+  color: #1ddbdb; 
   transform: translateY(-5px) scale(1.05);
-  background-color: #28cfcf;
   box-shadow:
     0 0 15px #1ad5d4,
     0 0 20px #1ad5d4,
     0 0 30px #1ad5d4;
+  text-shadow: none; 
 }
+
+
 
 .login-text {
   margin-top: 10px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   text-align: center;
   color: #000000;
 }
@@ -368,4 +380,8 @@ body, html {
   margin-top: 2rem;
   font-family: 'Norse', sans-serif !important;
   font-weight: bold;
+  text-shadow: 0 2px 4px #50f3f3,
+  0 2px 4px #50f3f3,
+  0 0 10px #30d6d6,
+  0 0 15px #20bfbf;
 }
