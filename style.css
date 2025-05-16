@@ -17,7 +17,7 @@
   --error-color: #e74c3c;
   --bg-left-overlay: rgba(0,0,0,0.4);
   --section-top: grey;
-  --section-mid: #ffffff;
+  --section-mid: rgba(255, 255, 255, 0.945);
   --section-bot: grey;
 }
 
@@ -43,7 +43,7 @@ body, html {
 .left-side {
   flex: 1;
   position: relative;
-  background-image: url(img/tree.jpg);
+  background-image: url(img/nature.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -63,7 +63,7 @@ body, html {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
   padding: 1rem 2rem;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   filter: grayscale(70%) brightness(80%);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); 
   transition: filter 0.3s ease;
@@ -76,11 +76,12 @@ body, html {
 
 
 .logo-img {
-  width: 80px;
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto 10px auto;
-  filter: grayscale(70%) brightness(80%);
+  filter: grayscale(50%) brightness(30%);
+   opacity: 0.8;
 }
 
 .logo-text {
@@ -108,9 +109,13 @@ body, html {
 
 .intro-text {
   margin-bottom: 30px;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 2rem;
+  line-height: 1.4;
   color: #333;
+}
+
+.intro-text p:last-of-type {
+  margin-top: 1.5rem;
 }
 
 .signup-form {
@@ -121,7 +126,7 @@ body, html {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 1.7rem;
-  color: #111;
+  color: #222;
 }
 
 .form-row {
@@ -193,7 +198,7 @@ body, html {
   margin-top: 10px;
   font-size: 0.9rem;
   text-align: center;
-  color: #444;
+  color: #555;
 }
 
 .login-text a {
