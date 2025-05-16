@@ -161,7 +161,6 @@ body, html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  text-decoration: darkcyan;
 }
 
 .intro-text p strong {
@@ -171,6 +170,8 @@ body, html {
   letter-spacing: 0.08em;
   color: #50f3f3; 
   text-shadow: 0 0 10px #50eef3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
 }
 
 @keyframes pulseShadow {
@@ -196,13 +197,17 @@ body, html {
   display: block;     
   margin-top: 1rem;     
   font-family: 'Georgia', serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
 }
 
 .intro-text p {
   font-size: 1.25rem;  
   line-height: 1.6;    
   font-weight: 500;    
-  color: #d0d7da;        
+  color: #d0d7da;   
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+     
 }
 
 
