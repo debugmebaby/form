@@ -111,7 +111,6 @@ body, html {
   color: #a1fff2;
   position: relative;
   animation: neonGlow 3s ease-in-out infinite alternate;
-  animation-delay: 0.5s;
 
 }
 
