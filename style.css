@@ -138,7 +138,6 @@ body, html {
   position: relative;
   z-index: 5;
   color: #222;
-  border-radius: 5px;
   background-color: rgba(245, 245, 245, 0.664);
   backdrop-filter: saturate(180%) blur(12px);
   border-top: 4px solid rgba(180, 180, 180, 0.137);
@@ -157,9 +156,7 @@ body, html {
   line-height: 1.6;
    padding: 3rem 2rem;  
   min-height: 180px;   
-  background-color: #f7f7f7; 
-  border-radius: 8px; 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  opacity: 75%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -223,7 +220,7 @@ body, html {
 .input-group label {
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: #2e6d73;
+  color: #080808;
   margin-bottom: 6px;
   letter-spacing: 0.05em;
   user-select: none;
@@ -237,7 +234,7 @@ body, html {
   border: 1px solid rgba(173, 216, 230, 0.4); 
   border-radius: 8px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  color: #e6f7ff;
+  color: black; /* Ändrat från #e6f7ff till svart */
   box-shadow: 0 1px 3px rgba(0, 191, 255, 0.1); 
 }
 
