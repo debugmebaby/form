@@ -8,8 +8,8 @@
 }
 
 :root {
-  --primary-color: #4a592b;
-  --primary-hover: #3d4b22;
+  --primary-color: #20bcc2;
+  --primary-hover: #30dfd0;
   --accent-color: #e2f0cb;
   --text-color: #222;
   --input-border: rgba(204, 204, 204, 0.5);
@@ -127,8 +127,8 @@ body, html {
   padding: 40px 60px;
   background: linear-gradient(to bottom,
     var(--section-top) 0%,
-    var(--section-mid) 35%,
-    var(--section-mid) 65%,
+    var(--section-mid) 45%,
+    var(--section-mid) 75%,
     var(--section-bot) 100%);
   display: flex;
   flex-direction: column;
@@ -139,16 +139,10 @@ body, html {
   z-index: 5;
   color: #222;
   border-radius: 5px;
-  background-color: rgba(245, 245, 245, 0.9);
+  background-color: rgba(245, 245, 245, 0.664);
   backdrop-filter: saturate(180%) blur(12px);
-  border-top: 4px solid rgba(180, 180, 180, 0.4);
-  border-bottom: 4px solid rgba(180, 180, 180, 0.4);
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  border-top: 4px solid rgba(180, 180, 180, 0.137);
+  border-bottom: 4px solid rgba(180, 180, 180, 0.137);
 }
 
 .intro-text {
@@ -209,7 +203,7 @@ body, html {
 }
 
 .input-group input:hover:not(:focus) {
-  border-color: #6a7f3d;
+  border-color: #3d777f;
   box-shadow: 0 0 5px rgba(106, 127, 61, 0.3);
   background: rgba(255, 255, 255, 0.2);
 }
@@ -229,8 +223,8 @@ body, html {
 
 .submit-button {
   width: 220px;
-  background: linear-gradient(145deg, #5a7035, #3d4b22);
-  color: white;
+  background: linear-gradient(145deg, #1ddbdb, #0ebb9e);
+  color: rgb(0, 0, 0);
   padding: 14px 0;
   font-size: 1.3rem;
   font-weight: 700;
@@ -242,8 +236,7 @@ body, html {
   margin: 20px auto 0 auto;
   user-select: none;
   display: block;
-  box-shadow: 0 8px 20px rgba(58, 75, 35, 0.6);
-  animation: pulseButton 4s ease-in-out infinite;
+  box-shadow: 0 8px 20px rgba(72, 170, 170, 0.6);
 }
 
 .submit-button:hover {
