@@ -128,7 +128,7 @@ body, html {
   background: linear-gradient(to bottom,
     var(--section-top) 0%,
     var(--section-mid) 45%,
-    var(--section-mid) 75%,
+    var(--section-mid) 45%,
     var(--section-bot) 100%);
   display: flex;
   flex-direction: column;
@@ -155,6 +155,14 @@ body, html {
   color: white;
   user-select: none;
   line-height: 1.6;
+   padding: 3rem 2rem;  
+  min-height: 180px;   
+  background-color: #f7f7f7; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .intro-text strong {
@@ -165,12 +173,20 @@ body, html {
 }
 
 .intro-text em {
-  color: #c9c3e3;
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  display: block;
-  margin-top: 0.8rem;
+   font-style: italic;   
+  font-size: 1.2rem;    
+  font-weight: 600;     
+  color: #c9c3e3;       
+  display: block;     
+  margin-top: 1rem;     
+  font-family: 'Georgia', serif;
+}
+
+.intro-text p {
+  font-size: 1.25rem;  
+  line-height: 1.6;    
+  font-weight: 500;    
+  color: #c9c3e3;        
 }
 
 
@@ -241,7 +257,7 @@ body, html {
   outline: none;
 }
 
-..input-group input:invalid {
+.input-group input:invalid {
   border-color: #4ac2cd; 
   box-shadow: 0 0 5px rgba(74, 194, 205, 0.4); 
   background-color: rgba(74, 194, 205, 0.05); 
@@ -280,7 +296,7 @@ body, html {
 }
 
 .login-text a {
-  color: var(--primary-color);
+  color: black;
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
