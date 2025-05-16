@@ -35,6 +35,7 @@ body, html {
    background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
+   overflow-x: hidden;
 }
 
 .container {
@@ -392,4 +393,46 @@ body, html {
   0 2px 4px #50f3f3,
   0 0 10px #30d6d6,
   0 0 15px #20bfbf;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    flex: 1 1 100%;
+    height: 50vh;
+  }
+
+  .logo-container {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  .right-side {
+    padding: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .input-group {
+    flex: 1 1 100%;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    padding: 1.5rem;
+    min-height: unset;
+  }
+
+  .signup-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .submit-button {
+    width: 100%;
+    font-size: 1.1rem;
+  }
 }
